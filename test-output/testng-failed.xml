@@ -3,16 +3,6 @@
 <suite thread-count="-1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test(failed)">
     <classes>
-      <class name="com.employeeapi.testcases.TC04_Put_Employee">
-        <methods>
-          <include name="postNewEmployee"/>
-          <include name="contenttypecheck"/>
-          <include name="setup"/>
-          <include name="statuslinecheck"/>
-          <include name="tearDown"/>
-          <include name="statuscodecheck"/>
-        </methods>
-      </class> <!-- com.employeeapi.testcases.TC04_Put_Employee -->
       <class name="com.employeeapi.testcases.TC05_Delete_Employee_Record">
         <methods>
           <include name="tearDown"/>
@@ -21,6 +11,16 @@
           <include name="responsebodycheck"/>
         </methods>
       </class> <!-- com.employeeapi.testcases.TC05_Delete_Employee_Record -->
+      <class name="com.employeeapi.testcases.TC03_PostNewEmployee">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="contenttypecheck"/>
+          <include name="statuscodecheck"/>
+          <include name="statuslinecheck"/>
+          <include name="postNewEmployee"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcases.TC03_PostNewEmployee -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
